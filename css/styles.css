@@ -1,0 +1,22 @@
+.cart-icon-wrapper:hover{
+   cursor: pointer;
+}
+
+#dropdown{
+   width: 320px;
+}
+
+.nav-link:hover{
+   font-weight: 400;
+}
+
+#btn-cart-value:hover {
+   cursor: default ;
+   color: #000;
+   background-color: #f8f9fa;
+   border-color: #f8f9fa;
+}
+
+.select-btn:hover {
+   background-color: #ebaf5eeb;
+}
