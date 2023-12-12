@@ -25,7 +25,7 @@
             <img class="navbar-brand py-0" src="images/logo.svg" alt="logo-img">
 
             <ul class="navbar-nav d-none d-lg-flex">
-                <li class="nav-item ms-3 "><a href="#" class="nav-link navigation">Collections</a></li>
+                <li class="nav-item ms-3 "><a href="./collections.html" class="nav-link navigation">Collections</a></li>
                 <li class="nav-item"><a href="#" class="nav-link navigation">Men</a></li>
                 <li class="nav-item"><a href="#" class="nav-link navigation">Women</a></li>
                 <li class="nav-item"><a href="#" class="nav-link navigation">About</a></li>
@@ -39,7 +39,7 @@
 
                 <div class="offcanvas-body mt-4">
                     <ul class="navbar-nav fs-3 fw-bold">
-                        <li class="nav-item"><a href="#" class="nav-link navigation text-dark">Collections</a></li>
+                        <li class="nav-item"><a href="./collections.html" class="nav-link navigation text-dark">Collections</a></li>
                         <li class="nav-item"><a href="#" class="nav-link navigation text-dark">Men</a></li>
                         <li class="nav-item"><a href="#" class="nav-link navigation text-dark">Women</a></li>
                         <li class="nav-item"><a href="#" class="nav-link navigation text-dark">About</a></li>
@@ -95,38 +95,343 @@
     </nav>
 
     <main>
-        <section class="container d-flex">
-            <div></div>
-        </section>
-
-       <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog mt-5 shadow">
-                <div class="modal-content p-3">
-                    <div class="modal-header">
-                        <h5 class="modal-title fw-bold" id="exampleModalLabel">Cart</h5>
+        <section class="container d-flex flex-column flex-lg-row justify-content-center pt-4 pt-lg-5 gap-4">
+            <div class="d-none d-md-flex flex-column gap-3 col-lg-8 col-xl-7">
+                <h3 class="fw-bold mb-0 text-secondary pb-3">Cart Summary</h3>
+                <div class="d-flex justify-content-between">
+                    <h5 class="fw-bold mb-0">Sub-Total</h5>
+                    <p class="fw-bold mb-0 text-secondary fs-5">$151.00</p>
+                </div>
+                <p class="mb-0 text-secondary fs-4 fw-bold">Cart(6)</p>
+                <div class="d-flex justify-content-between align-items-center border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-dash fs-4 fw-bolder"></i>
+                        <button type="button" title="btn" class="btn border border-dark">
+                            01
+                        </button>
+                        <i class="bi bi-plus fs-4 fw-bolder"></i>
                     </div>
 
-                    <div class="modal-body text-center py-4">
-                        <section class="d-flex flex-column">
-                            <div class="d-flex gap-3 mb-4 justify-content-between">
-                                <img src="images/image-product-1-thumbnail.jpg" class="img-fluid rounded-2 align-self-center"
-                                    style="height: 3rem;" alt=""
-                                >
-                                <div class="d-flex flex-column align-items-center">
-                                    <p class="text-muted mb-0 fs-5">Autumn Limited Edition...</p>
-                                    <p class="align-self-start mb-0 fs-4 text-muted"> $125.00 × 3 <span class="fw-bolder">$375.00</span></p>
-                                </div>
-                                <i class="bi bi-trash align-self-center text-muted fs-3"></i>
-                            </div>
-                            <button type="button" title="btn" class="btn text-light fw-bold py-3 rounded-4"
-                                style="background-color: #fd7e14;">Checkout
+                    <p class="fw-bold mb-0">$54.00</p>
+                    <p class="fw-bold mb-0">$54.00</p>
+
+                    <i class="bi bi-trash fs-3 text-secondary"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-dash fs-4 fw-bolder"></i>
+                        <button type="button" title="btn" class="btn border border-dark">
+                            01
+                        </button>
+                        <i class="bi bi-plus fs-4 fw-bolder"></i>
+                    </div>
+
+                    <p class="fw-bold mb-0">$54.00</p>
+                    <p class="fw-bold mb-0">$54.00</p>
+
+                    <i class="bi bi-trash fs-3 text-secondary"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-dash fs-4 fw-bolder"></i>
+                        <button type="button" title="btn" class="btn border border-dark">
+                            01
+                        </button>
+                        <i class="bi bi-plus fs-4 fw-bolder"></i>
+                    </div>
+
+                    <p class="fw-bold mb-0">$54.00</p>
+                    <p class="fw-bold mb-0">$54.00</p>
+
+                    <i class="bi bi-trash fs-3 text-secondary"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-dash fs-4 fw-bolder"></i>
+                        <button type="button" title="btn" class="btn border border-dark">
+                            01
+                        </button>
+                        <i class="bi bi-plus fs-4 fw-bolder"></i>
+                    </div>
+
+                    <p class="fw-bold mb-0">$54.00</p>
+                    <p class="fw-bold mb-0">$54.00</p>
+
+                    <i class="bi bi-trash fs-3 text-secondary"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-dash fs-4 fw-bolder"></i>
+                        <button type="button" title="btn" class="btn border border-dark">
+                            01
+                        </button>
+                        <i class="bi bi-plus fs-4 fw-bolder"></i>
+                    </div>
+
+                    <p class="fw-bold mb-0">$54.00</p>
+                    <p class="fw-bold mb-0">$54.00</p>
+
+                    <i class="bi bi-trash fs-3 text-secondary"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-dash fs-4 fw-bolder"></i>
+                        <button type="button" title="btn" class="btn border border-dark">
+                            01
+                        </button>
+                        <i class="bi bi-plus fs-4 fw-bolder"></i>
+                    </div>
+
+                    <p class="fw-bold mb-0">$54.00</p>
+                    <p class="fw-bold mb-0">$54.00</p>
+
+                    <i class="bi bi-trash fs-3 text-secondary"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-dash fs-4 fw-bolder"></i>
+                        <button type="button" title="btn" class="btn border border-dark">
+                            01
+                        </button>
+                        <i class="bi bi-plus fs-4 fw-bolder"></i>
+                    </div>
+
+                    <p class="fw-bold mb-0">$54.00</p>
+                    <p class="fw-bold mb-0">$54.00</p>
+
+                    <i class="bi bi-trash fs-3 text-secondary"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-column gap-3 d-md-none">
+                <h3 class="fw-bold mb-0 text-secondary pb-3">Cart Summary</h3>
+                <div class="d-flex justify-content-between">
+                    <h5 class="fw-bold mb-0">Sub-Total</h5>
+                    <p class="fw-bold mb-0 text-secondary fs-5">$151.00</p>
+                </div>
+                <p class="mb-0 text-secondary fs-4 fw-bold">Cart(6)</p>
+                <div class="d-flex flex-column gap-1 border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                            <p class="fw-bold mb-0">$54.00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <i class="bi bi-trash fs-3 text-secondary"></i>
+                        <div class="">
+                            <i class="bi bi-dash fs-4 fw-bolder"></i>
+                            <button type="button" title="btn" class="btn border border-dark">
+                                01
                             </button>
-                        </section>
+                            <i class="bi bi-plus fs-4 fw-bolder"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-1 border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                            <p class="fw-bold mb-0">$54.00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <i class="bi bi-trash fs-3 text-secondary"></i>
+                        <div class="">
+                            <i class="bi bi-dash fs-4 fw-bolder"></i>
+                            <button type="button" title="btn" class="btn border border-dark">
+                                01
+                            </button>
+                            <i class="bi bi-plus fs-4 fw-bolder"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-1 border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                            <p class="fw-bold mb-0">$54.00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <i class="bi bi-trash fs-3 text-secondary"></i>
+                        <div class="">
+                            <i class="bi bi-dash fs-4 fw-bolder"></i>
+                            <button type="button" title="btn" class="btn border border-dark">
+                                01
+                            </button>
+                            <i class="bi bi-plus fs-4 fw-bolder"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-1 border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                            <p class="fw-bold mb-0">$54.00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <i class="bi bi-trash fs-3 text-secondary"></i>
+                        <div class="">
+                            <i class="bi bi-dash fs-4 fw-bolder"></i>
+                            <button type="button" title="btn" class="btn border border-dark">
+                                01
+                            </button>
+                            <i class="bi bi-plus fs-4 fw-bolder"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-1 border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                            <p class="fw-bold mb-0">$54.00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <i class="bi bi-trash fs-3 text-secondary"></i>
+                        <div class="">
+                            <i class="bi bi-dash fs-4 fw-bolder"></i>
+                            <button type="button" title="btn" class="btn border border-dark">
+                                01
+                            </button>
+                            <i class="bi bi-plus fs-4 fw-bolder"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-1 border p-3 checkout-item">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="image-background d-flex justify-content-center align-items-center">
+                            <img class="img-fluid checkout-img" src="images/image-product-1-removebg-preview.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-1 description-wrapper">
+                            <h5 class="mb-0 fw-semibold text-secondary">Product Name Product Name</h5>
+                            <p class="mb-0 text-secondary fw-light">Product code</p>
+                            <p class="fw-bold mb-0">$54.00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <i class="bi bi-trash fs-3 text-secondary"></i>
+                        <div class="">
+                            <i class="bi bi-dash fs-4 fw-bolder"></i>
+                            <button type="button" title="btn" class="btn border border-dark">
+                                01
+                            </button>
+                            <i class="bi bi-plus fs-4 fw-bolder"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="p-4 total border d-lg-flex flex-column gap-3 d-none ">
+                <h6 class="fw-bold mb-0 pb-2 text-secondary">Cart Summary</h6>
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex justify-content-between">
+                        <p class="fw-bold mb-0">Sub-Total</p>
+                        <p class="fw-bold mb-0 text-secondary">$151.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="fw-bold mb-0">Delivery</p>
+                        <p class="fw-bold mb-0 text-secondary">$11.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h3 class="fw-bold mb-0">Total</h3>
+                        <p class="fw-bold mb-0 text-secondary fs-4">$162.00</p>
+                    </div>
+                </div>
+                <button class="btn cta-btn-2 fw-bold mt-2 rounded-0"> Check Out</button>
+            </div>
+
+            <div class="p-4 position-fixed bottom-0 start-0 end-0 d-flex flex-column d-lg-none gap-3 z-3 bg-white shadow">
+                <div class="d-flex justify-content-between">
+                    <h3 class="fw-bold mb-0">Total</h3>
+                    <p class="fw-bold mb-0 text-secondary fs-4">$162.00</p>
+                </div>
+                <button class="btn cta-btn-2 fw-bold mt-2 rounded-0 w-100">Check Out</button>
+            </div>
+        </section>
     </main>
 
     <!-- Bootstrap JavaScript Bundle with Popper -->
