@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Ecommerce-LP</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg pb-0">
+        <div class="container justify-content-start justify-content-lg-between border-bottom py-3">
+
+            <button type="button" title="btn" class="btn btn-bg-light d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#navmenu" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <img class="navbar-brand py-0" src="images/logo.svg" alt="logo-img">
+
+            <ul class="navbar-nav d-none d-lg-flex">
+                <li class="nav-item ms-3 "><a href="#" class="nav-link navigation">Collections</a></li>
+                <li class="nav-item"><a href="#" class="nav-link navigation">Men</a></li>
+                <li class="nav-item"><a href="#" class="nav-link navigation">Women</a></li>
+                <li class="nav-item"><a href="#" class="nav-link navigation">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link navigation">Contact</a></li>
+            </ul>
+
+            <div class=" offcanvas offcanvas-start order-3 order-lg-2 d-block d-lg-none px-3" id="navmenu">
+                <div class="offcanvas-header mt-3">
+                    <button type="button" class="btn-close text-reset fw-bold fs-2" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body mt-4">
+                    <ul class="navbar-nav fs-3 fw-bold">
+                        <li class="nav-item"><a href="#" class="nav-link navigation text-dark">Collections</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link navigation text-dark">Men</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link navigation text-dark">Women</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link navigation text-dark">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link navigation text-dark">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="navbar-nav flex-row order-2 flex-grow-1 justify-content-end">
+                <li class="nav-item dropdown align-self-center cart-icon-wrapper me-sm-3">
+                    <i class="bi bi-cart3 text-secondary dropdown-toggle d-none d-lg-block position-relative" role="menu" 
+                        data-bs-toggle="dropdown" style="font-size: 1rem;">
+                        <span class="position-absolute top-25 start-50 translate-middle badge rounded-4" 
+                            style="background-color: #fd7e14;">1
+                        </span>
+                    </i>
+
+                    <i class="bi bi-cart3 text-dark fw-bolder d-block fs-3 d-lg-none"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: 1rem;">
+                        <span class="position-absolute top-25 start-100 translate-middle badge rounded-4" 
+                            style="background-color: #fd7e14;">1
+                        </span>
+                    </i>
+
+                    <ul class="dropdown-menu dropdown-menu-collapse dropdown-menu-end border-white shadow border dropdown-menu-light"
+                        id="dropdown">
+                        <li class="drop-down-header px-3 py-2">
+                            <h6 class="fw-bold">Cart</h6>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <section class="d-flex flex-column p-3">
+                            <div class="d-flex gap-2 align-items-center mb-3">
+                                <img src="images/image-product-1-thumbnail.jpg" class="img-fluid rounded-2"
+                                    style="height: 3rem;" alt="">
+                                <p class="text-muted mb-0">Fall Limited Edition Sneakers $125.00 × 3 
+                                    <span class="fw-bolder">$375.00</span>
+                                </p>
+                                <i class="bi bi-trash align-self-center text-muted"></i>
+                            </div>
+                            <button type="button" title="btn" class="btn text-light fw-bold"
+                                style="background-color: #fd7e14;">checkout
+                            </button>
+                        </section>
+                    </ul>
+                </li>
+                <li class="nav-item ms-3 ms-lg-2">
+                    <img src="images/image-avatar.png" class="img-fluid avatar-image" style="width: 2.5rem;" alt="avatar-img">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="d-flex justify-content-center">
+        <div class="collection-wrapper pt-5">
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+            <div class="d-flex flex-column align-items-center  gap-3 border cart-item py-4">
+                <div class="item-img border-bottom">
+                    <img class="img-fluid" src="images/image-product-1-removebg-preview.png" alt="">
+                </div>
+                <div class="item-description d-flex flex-column gap-2 text-center">
+                    <h6 class="mb-0 fw-bold">Blue Washed Denim Button Up Jacket</h6>
+                    <p class="mb-0 fw-bold price">$55.00</p>
+                </div>
+                <button class="btn cta-btn">Add To Cart</button>
+            </div>
+        </div>
+
+       <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog mt-5 shadow">
+                <div class="modal-content p-3">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="exampleModalLabel">Cart</h5>
+                    </div>
+
+                    <div class="modal-body text-center py-4">
+                        <section class="d-flex flex-column">
+                            <div class="d-flex gap-3 mb-4 justify-content-between">
+                                <img src="images/image-product-1-thumbnail.jpg" class="img-fluid rounded-2 align-self-center"
+                                    style="height: 3rem;" alt=""
+                                >
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="text-muted mb-0 fs-5">Autumn Limited Edition...</p>
+                                    <p class="align-self-start mb-0 fs-4 text-muted"> $125.00 × 3 <span class="fw-bolder">$375.00</span></p>
+                                </div>
+                                <i class="bi bi-trash align-self-center text-muted fs-3"></i>
+                            </div>
+                            <button type="button" title="btn" class="btn text-light fw-bold py-3 rounded-4"
+                                style="background-color: #fd7e14;">Checkout
+                            </button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
