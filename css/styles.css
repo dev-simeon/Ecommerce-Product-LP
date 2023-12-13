@@ -55,6 +55,12 @@
    color: #fd7e14;
 }
 
+input.quantity{
+   padding: 6px;
+   width: 2.5rem;
+   text-align: center;
+}
+
 .cta-btn-2{
    background-color: #fd7e14;
    color: #fcfcfc;
