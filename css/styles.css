@@ -51,6 +51,10 @@
    width: 320px;
 }
 
+.remove-btn{
+   color: #fd7e14;
+}
+
 .cta-btn-2{
    background-color: #fd7e14;
    color: #fcfcfc;
